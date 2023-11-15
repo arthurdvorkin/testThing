@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { doAThing } from "package";
+const doAThingPackage = require("package");
 export default function Home() {
-  const x = doAThing();
+  const x = doAThingPackage.doAThing();
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <h1>{x}</h1>
